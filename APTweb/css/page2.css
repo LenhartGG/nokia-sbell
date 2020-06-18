@@ -1,0 +1,42 @@
+html,
+body,
+.mycontainer{
+    height: 100%;
+}
+#iframe{
+    height: 100%;
+    border-top: 2px solid #cccccc;
+}
+#table{
+    border-collapse: collapse;
+}
+
+#table2{
+    border-collapse: collapse;
+    margin-top: 22px;
+}
+
+.left-box{
+    float: left;
+    width: 60%;
+    margin-right: 28px;
+    padding: 8px; 
+}
+
+.right-box{
+    float: left;
+    padding: 8px;
+}
+
+.form-group{
+    margin: 5px auto;
+    width: 175px;
+}
+
+#table th, #table td{
+    padding: 10px;
+}
+
+#table2 th, #table td{
+    padding: 10px;
+}

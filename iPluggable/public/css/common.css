@@ -1,0 +1,336 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  /* padding: 20px; */
+  min-height: 100%;
+  margin: 0 auto -70px;
+}
+.footer{
+  height: 70px;
+}
+.footer div p{
+  padding-top: 1.5rem!important;
+  padding-bottom: 2rem!important;
+  color: white;
+  background: black;
+}
+.push {
+  height: 70px;
+}
+ul,li{ 
+  padding:0;
+  margin:0;
+  list-style:none
+}
+.modal-lg {
+  max-width: 80% !important;
+}
+
+.navbar-brand { position: relative; z-index: 2; }
+
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+
+.navbar .navbar-collapse { position: relative; overflow: hidden !important; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+  background-color: rgb(111, 84, 153);
+  border-color: rgb(111, 84, 153);
+  color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+  height: auto !important;
+  transition: transform 0.3s;
+  transform: translate(0px,-50px);
+}
+.navbar.navbar-default .nav-collapse.in,
+.navbar.navbar-inverse .nav-collapse.in {
+  transform: translate(0px,0px);
+}
+
+
+@media screen and (max-width: 767px) {
+  .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
+  
+  .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+  .navbar .nav-collapse .navbar-form { margin: 0; }
+  .nav-collapse>li { float: none; }
+  
+  .navbar.navbar-default .nav-collapse,
+  .navbar.navbar-inverse .nav-collapse {
+      transform: translate(-100%,0px);
+  }
+  .navbar.navbar-default .nav-collapse.in,
+  .navbar.navbar-inverse .nav-collapse.in {
+      transform: translate(0px,0px);
+  }
+  
+  .navbar.navbar-default .nav-collapse.slide-down,
+  .navbar.navbar-inverse .nav-collapse.slide-down {
+      transform: translate(0px,-100%);
+  }
+  .navbar.navbar-default .nav-collapse.in.slide-down,
+  .navbar.navbar-inverse .nav-collapse.in.slide-down {
+      transform: translate(0px,0px);
+  }
+}
+
+/* boostrap4 nav */
+.nav-link {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  width: 100px;
+}
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+  }
+}
+.py-2 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.navbar-light .navbar-brand {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .navbar-text a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
+  color: rgba(0, 0, 0, 0.9);
+}
+/* boostrap4 nav */
+/* nav item */
+.navItemSelected{
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* nav item */
+
+
+/********* 保存功能content start ************/
+.blueBackWhiteColor{
+background: #109DDF;
+color: white;
+text-align: center;
+border-radius: 6px 0px 6px 0px;
+}
+
+.hr0{height:1px;border:none;border-top: 1px solid darkgray;}
+.hr1{ height:1px;border:none;border-top:1px solid black;} 
+
+.modal-header{
+min-height: 2rem;
+padding-top: 0px!important;
+border-bottom: 1px solid #e5e5e5;
+}
+.modal .row{
+padding-right: 20px;
+padding-bottom: 7px;
+}
+.modal_th{
+color: grey!important;
+font-size: 16px!important;
+font-weight: 200!important;
+text-align: left!important;
+}
+.modal_h5{
+color: grey!important;
+font-size: 14px!important;
+font-weight: 100!important;
+overflow-wrap: break-word;
+/* text-align: right!important; */
+margin-right: -20px;
+}
+.modal_input{
+color: grey!important;
+font-size: 14px!important;
+font-weight: 100!important;
+text-align: left!important;
+width: 100%;
+}
+.checkinModal_form_label{
+font-size: 16px;
+font-weight: 100;
+color: grey;
+text-align: left!important;
+}
+/* General #modalBody0 */
+#modalBody0 .modal_h5{
+  text-align: right!important;
+}
+/* tab1 */
+.modal-body .tab-content div.tab-pane:nth-of-type(1) .row div:nth-of-type(1) .modal_h5{
+text-align: right!important;
+}
+.modal-body .tab-content div.tab-pane:nth-of-type(1) .row div:nth-of-type(3) .modal_h5{
+text-align: right!important;
+}
+/* tab2 */
+/* .modal-body .tab-content div.tab-pane:nth-of-type(2) .row div:nth-of-type(1) .modal_h5{
+text-align: right!important;
+}
+.modal-body .tab-content div.tab-pane:nth-of-type(2) .row div:nth-of-type(2) .modal_h5{
+text-align: left!important;
+} */
+/* 当Application为general时 */
+/* #modalBody0 .row div:nth-of-type(1) .modal_h5{
+text-align: right!important;
+}#modalBody0 .row div:nth-of-type(3) .modal_h5{
+text-align: right!important;
+} */
+/* .modalBody_a{
+color: white;
+font-size: 18px;
+font-weight: 100;
+background: #109DDF;
+text-align: center;
+padding: 0.5rem;
+border: 1px solid #109DDF;
+border-radius: 4px;
+} */
+
+.carousel-indicators{
+position: unset;
+bottom: 0px;
+left: 0px;
+width: 100%;
+padding-left: 0;
+margin-left: 0;
+text-align: center;
+list-style: none;
+}
+.carousel-indicators li {
+border: 1px solid #109DDF;
+}
+.carousel-indicators .active {
+background-color: #109DDF;
+}
+/********** 保存功能content end ************/
+@media (min-width: 768px){
+.modal-dialog {
+    width: 680px!important;
+    margin: 30px auto!important;
+}
+}
+
+
+/* link1 */
+.link1{
+
+}
+.link1 .link-txt{
+float: left;
+width: 100px;
+}
+.link1 .link-con{
+float: left;
+width: 480px;
+}

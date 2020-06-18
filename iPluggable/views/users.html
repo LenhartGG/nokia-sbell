@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iPluggable | users</title>
+    <!-- <link rel="shortcut icon" href="#" /> -->
+    <style>
+        body{
+            background: url('images/OI_Docks_01_HR_RGB.jpg');
+        }
+        .section_login{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .section_login .containerbox{
+            position: relative;
+            width: 300px;
+            margin: 200px auto;
+            background: rgba(87, 161, 205, 0.8);
+            padding: 20px 40px;
+            border-radius: 5px;
+        }
+        .section_login .form-group{
+            padding: 10px 0;
+        }
+        .section_login input, button{
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .section_login input{
+            text-indent: 2em;
+        }
+        .section_login button{
+            background: rgba(0, 0, 255, 0.7);
+            margin-top: 30px;
+            opacity: .6;
+            color: blanchedalmond;
+        }
+        .section_login button:hover{
+            background: rgba(0, 0, 255, 1);
+        }
+        .section_login .close{    
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-family: monospace;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .section_login .close:hover{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+
+	<!-- section_login -->
+    <section class="section_login">
+        <div class="containerbox">
+            <div class="header">iPluggable</div>
+            <div class="content">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1">Email address</label> -->
+                            <input class="username"type="text" focus class="form-control" placeholder="UserName">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                            <input class="password" type="password" class="form-control" placeholder="PassWord">
+                        </div>
+                        <button class="login" type="button">LOGIN</button>
+                    </form>
+            </div>
+            <div class="close"></div>
+        </div>
+    </section>
+
+</body>
+	<!-- JavaScript -->
+    <script src="javascripts/jquery-2.2.3.min.js"></script>
+    <!-- Util -->
+    <script src="javascripts/src/utils.js"></script>
+    <!-- login_controller -->
+	<script src="javascripts/src/users_controller.js"></script>
+</html>

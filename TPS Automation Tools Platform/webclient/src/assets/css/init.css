@@ -1,0 +1,16 @@
+.clearfix::before, .clearfix::after{
+    overflow: hidden;
+    display: table;
+    visibility: hidden;
+    content: '';
+    clear: both;
+}
+
+ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.atlwdg-trigger.atlwdg-RIGHT{
+    z-index: 1000;
+}

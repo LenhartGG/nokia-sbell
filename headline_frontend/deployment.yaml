@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: headlinenginxsvc
+  namespace: iontool-prod
+  labels:
+    app: headlinenginxsvc
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+    name: http
+    targetPort: 80
+    nodePort: 30008
+  - port: 443
+    protocol: TCP
+    name: https
+    targetPort: 443
+    nodePort: 30009
+  selector:
+    app: headlinenginx
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: headlinenginx
+  namespace: iontool-prod
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: headlinenginx
+    spec:
+      volumes:
+      - name: secret-volume
+        secret:
+          secretName: headlinessl
+      - name: configmap-volume
+        configMap:
+          name: headlinenginxconfigmap
+      containers:
+      - name: headlinenginxhttps
+        image: $IMAGE_NAME
+        command: ["/home/auto-reload-nginx.sh"]
+        ports:
+        - containerPort: 443
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /etc/nginx/ssl
+          name: secret-volume
+        - mountPath: /etc/nginx/conf.d
+          name: configmap-volume

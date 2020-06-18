@@ -1,0 +1,71 @@
+/**
+* 重置 iview.css
+*/
+
+/* ivu-breadcrumb */
+.ivu-breadcrumb{
+  color: #fff;
+}
+.headline_breadcrup .ivu-breadcrumb a{
+  color: #fff;
+}
+.headline_breadcrup .ivu-breadcrumb a:hover{
+  color: #2d8cf0;
+}
+.headline_breadcrup .ivu-breadcrumb>span:last-child{
+  color: #fff;
+  font-weight: normal;
+}
+
+.ivu-table{
+  font-size: 14px;
+  overflow: inherit;
+}
+.ivu-table-wrapper{
+  /* border: none; */
+  overflow-y: inherit;
+  overflow: inherit;
+}
+.ivu-table th{
+  background-color: #fff;
+}
+/* ivu-table-cell */
+.ivu-table-cell {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  word-break: initial;
+  text-overflow: clip;
+}
+td.ivu-table-expanded-cell{
+  background-color: #fff;
+}
+/* section2 ivu-table-tbody */ 
+.section2 .ivu-table-tbody .ivu-table-row:nth-of-type(1) td{
+  background: rgba(231,243,255,1);
+}
+
+/* spin 加载中 */
+.ivu-spin-fix{
+  border-radius: 6px;
+}
+
+.ivu-tree ul li{
+  margin: 0;
+  padding: 8px 0;
+}
+
+/* assignModel */
+.table-expand .ivu-modal-header p, .ivu-modal-header-inner{
+  font-family: "Headline bold";
+}
+
+/* table-expand */
+.table-expand .ivu-btn>span{
+  vertical-align: initial;
+}
+
+/* 隐藏复选框CheckBox的文字 */
+.recommand-check > span:nth-last-of-type(1){
+  display: none;
+}

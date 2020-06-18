@@ -1,0 +1,3 @@
+$(function(){
+    E2ERoutingDisplay();
+})

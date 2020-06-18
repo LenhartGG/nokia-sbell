@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .color-box{
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .shadow{
+            background: #F7F8F9;
+            padding: 3px;
+            margin: 10px 0;
+        }
+        .info-tab {
+            float: left;
+            margin-left: -23px;
+        }
+        .info-tab {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            position: relative;
+            top: 8px;
+        }
+        .tip-icon {
+            background: #92CD59;
+        }
+        .tip-icon img{
+            height: 24px;
+            margin: 8px;
+        }
+
+
+        .tip-box{
+            padding: 8px 8px 3px 26px;
+        }
+
+        .tip-box{
+            color: #2e5014;
+            background: #d5efc2;
+        }
+
+        .info-tab i::before, .info-tab i::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            transform: rotateX(60deg);
+        }
+        .info-tab i::before {
+            width: 20px;
+            height: 20px;
+            box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+        }
+        .tip-icon i::before {
+            background: #75b436;
+        }
+        .info-tab i::before, .info-tab i::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            transform: rotateX(60deg);
+        }
+        .info-tab i::after {
+            width: 0;
+            height: 0;
+            border: 12px solid transparent;
+            border-bottom-color: #fff;
+            border-left-color: #fff;
+            bottom: -18px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Tip Box -->
+    <div class="color-box">
+        <div class="shadow">
+            <div class="info-tab tip-icon" title="Useful Tips">
+                <img src="./images/light.png" alt="">
+                <i></i>
+            </div>
+            <div class="tip-box">
+                <p style="margin: 0 0 12px;"><strong>Tip:</strong> The <code>.fade</code> and <code>.show</code> classes on the <code>.alert</code> element enable the fading transition effect while closing the alert boxes. If you don't want animation just removes these classes. Also, the class <code>.alert-dismissible</code> is required on the <code>.alert</code> element for proper positioning of the <code>.close</code> button. If your alert doesn't have a close button you can skip this class.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

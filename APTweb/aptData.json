@@ -1,0 +1,63 @@
+{
+	"issueSum": {
+		"total": 10,
+		"instrument": 0,
+		"case_cfg_env": 3,
+		"traffic_verify_issue": 0,
+		"ne_issue": 7,
+		"apt_issue": 0,
+		"ne_connection": 0
+	},
+	"classes": [
+		"traffic_verify_issue",
+		"case_cfg_env",
+		"instrument",
+		"ne_issue",
+		"apt_issue",
+		"ne_connection"
+	],
+	"ne_issue": [
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM3/191203103854/logs/falcon_load_OADM_common_download_Testcase-1/",
+			"caseName": "falcon_load_OADM_common_download_Testcase-1"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM/191203174028/logs/falcon_load_OADM_common_download_Testcase-1/",
+			"caseName": "falcon_load_OADM_common_download_Testcase-1"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM3/191203152701/logs/falcon_load_OADM_common_check_Testcase-3/",
+			"caseName": "falcon_load_OADM_common_check_Testcase-3"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM3/191203152701/logs/falcon_load_OADM_common_check_Testcase-5/",
+			"caseName": "falcon_load_OADM_common_check_Testcase-5"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM3/191203163437/logs/falcon_load_OADM_common_testset_Testcase-1/",
+			"caseName": "falcon_load_OADM_common_testset_Testcase-1"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM/191203212924/logs/falcon_load_OADM_common_check_Testcase-1/",
+			"caseName": "falcon_load_OADM_common_check_Testcase-1"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM/191203212924/logs/falcon_load_OADM_common_check_Testcase-3/",
+			"caseName": "falcon_load_OADM_common_check_Testcase-3"
+		}
+	],
+	"case_cfg_env": [
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM/191203174357/logs/falcon_load_OADM_common_upgrade_Testcase-1/",
+			"caseName": "falcon_load_OADM_common_upgrade_Testcase-1"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM/191203193319/logs/falcon_load_OADM_common_upgrade_Testcase-1/",
+			"caseName": "falcon_load_OADM_common_upgrade_Testcase-1"
+		},
+		{
+			"caseUrl": "http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM/191203215050/logs/falcon_load_OADM_common_check_Testcase-3/",
+			"caseName": "falcon_load_OADM_common_check_Testcase-3"
+		}
+	]
+}

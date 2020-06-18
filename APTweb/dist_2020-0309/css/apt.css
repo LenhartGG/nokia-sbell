@@ -1,0 +1,144 @@
+
+body {   
+font:76% Verdana,Tahoma,Arial,sans-serif;
+line-height:1.4em;
+color:#303030;
+}  
+ 
+
+h2, h4 {
+margin:0 0 15px; 
+color:#666; 
+font-weight:normal; 
+line-height:1.3em; 
+font-size:14px 
+}
+
+h3{
+ margin:0 0 5px 0;
+ font-size:1.4em; 
+ letter-spacing:-1px;
+}
+
+p { 
+ text-align: left;
+ font-family: monospace; 
+ color: black;
+ font-size:1.4em;
+}
+
+a {
+color:#467aa7; 
+font-weight:400; 
+font-size:1em
+}
+a:hover, #topright a:hover {
+color:#2a5a9a;
+}      
+.failure {
+color:#d92d2d; 
+font-weight:bold;
+}
+.highlighted {
+color:#000080; 
+font-weight:bold;
+}
+.passed {
+color:#008000; 
+font-weight:bold;
+}
+.condpassed {
+color:#003399; 
+font-weight:bold;
+}
+.skipped {
+color:#FFCC00; 
+font-weight:bold;
+}
+.blocked {
+color:#FF6600; 
+font-weight:bold;
+}
+.other {
+color:#FF00FF; 
+font-weight:bold;
+}
+table {
+font:76% Verdana,sans-serif; 
+font-size:1em
+}   
+pre {
+font:76% Verdana,sans-serif; 
+font-size:1em
+}
+/* Table headers  */
+th { 
+background-color:#5D7EBA; 
+color:#ffffff 
+}
+tfoot { 
+background-color:#5D7EBA 
+}
+.log_timestamp {
+COLOR:#949494;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: #455d8b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+} 
+
+
+#heading{
+
+width:100%;
+margin:0 1px;
+background:#5D7EBA;
+color:#ffffff;
+}
+
+#label {
+color:#5D7EBA;
+font-weight:bold; 
+line-height:1.3em; 
+font:125% Verdana,sans-serif;
+}
+#about_text{
+white-space: nowrap;
+
+}
+#about_label {
+color:#5D7EBA;
+font-weight:bold; 
+
+}
+
+[id^="trace"]{
+font-family:"Courier New", Courier, monospace;
+font-size:13px;
+}
+	
+   

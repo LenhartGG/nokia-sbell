@@ -1,0 +1,182 @@
+/**
+ * Headline Regular
+ */
+
+@font-face {
+    font-family: 'Headline Regular';
+    /*字体名称*/
+    src: url('../NokiaFont/NokiaPureHeadline_Regular.ttf');
+    /*字体源文件*/
+}
+
+/**
+ * Headline Bold
+ */
+
+@font-face {
+    font-family: 'Headline Bold';
+    /*字体名称*/
+    src: url('../NokiaFont/NokiaPureHeadline_Bold_0.ttf');
+    /*字体源文件*/
+}
+
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1070048_73g1jktbc0x.eot');
+    src: url('//at.alicdn.com/t/font_1070048_73g1jktbc0x.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1070048_73g1jktbc0x.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1070048_73g1jktbc0x.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1070048_73g1jktbc0x.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1070048_73g1jktbc0x.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    color: RGBA(202, 202, 202, 1);
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#app {
+    font-family: 'Headline Regular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Headline Regular';
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #2d8cf0;
+}
+
+img {
+    vertical-align: top;
+    border: none
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.shadow{
+    -moz-box-shadow:0px 0px 5px #999999; 
+    -webkit-box-shadow:0px 0px 5px #999999; 
+    box-shadow:0px 0px 5px #999999;
+}
+
+/* 通过id添加自定义滚动条 */
+#scroll{
+    overflow:auto;
+    /* margin-bottom: 20px; */
+}
+#scroll::-webkit-scrollbar{/*滚动条整体部分，其中的属性有width,height,background,border等（就和一个块级元素一样）（位置1）*/
+        width:10px;
+        height:10px;
+}
+#scroll::-webkit-scrollbar-button{/*滚动条两端的按钮，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置2）*/
+        /* background:#74D334; */
+}
+#scroll::-webkit-scrollbar-track{/*外层轨道，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置3）*/
+        /* background:#FF66D5; */
+}
+#scroll::-webkit-scrollbar-track-piece{/*内层轨道，滚动条中间部分（位置4）*/
+        /* background:#FF66D5; */
+}
+#scroll::-webkit-scrollbar-thumb{/*滚动条里面可以拖动的那部分（位置5）*/
+    background:#FFA711;
+    border-radius:4px;
+    background:rgba(216,216,216,1);
+    border-radius:7px;
+}
+#scroll::-webkit-scrollbar-corner {/*边角（位置6）*/
+    /* background:#82AFFF;  */
+}
+#scroll::-webkit-scrollbar-resizer  {/*定义右下角拖动块的样式（位置7）*/
+    /* background:#FF0BEE; */
+}
+#scroll{
+    scrollbar-arrow-color: #f4ae21; /**//*三角箭头的颜色*/ 
+    scrollbar-face-color: #333; /**//*立体滚动条的颜色*/ 
+    scrollbar-3dlight-color: #666; /**//*立体滚动条亮边的颜色*/ 
+    scrollbar-highlight-color: #666; /**//*滚动条空白部分的颜色*/ 
+    scrollbar-shadow-color: #999; /**//*立体滚动条阴影的颜色*/ 
+    scrollbar-darkshadow-color: #666; /**//*立体滚动条强阴影的颜色*/ 
+    scrollbar-track-color: #666; /**//*立体滚动条背景颜色*/ 
+    scrollbar-base-color:#f8f8f8; /**//*滚动条的基本颜色*/ 
+}
+
+
+/* 通过id添加自定义滚动条 */
+.scroll-2{
+    overflow:auto;
+}
+.scroll-2::-webkit-scrollbar{
+    width:6px;
+    height:6px;
+}
+.scroll-2::-webkit-scrollbar-track{
+    /* background: #f6f6f6; */
+    width:4px;
+    height: 4px;
+    border-radius:7px;
+}
+.scroll-2::-webkit-scrollbar-thumb{
+    background: #aaa;
+    border-radius:7px;
+}
+.scroll-2::-webkit-scrollbar-thumb:hover{
+    background: #747474;
+}
+.scroll-2::-webkit-scrollbar-corner{
+    background: #f6f6f6;
+    width:4px;
+    height: 4px;
+}
+
+
+/* 单行超出隐藏 */
+.ellipsis
+{
+    overflow:hidden;/*超出部分隐藏*/
+    text-overflow:ellipsis;/*超出部分显示省略号*/
+    white-space:nowrap;/*规定段落中的文本不进行换行 */
+}
+
+.atlwdg-trigger.atlwdg-SUBTLE{
+    z-index: 1000;
+}

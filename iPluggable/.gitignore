@@ -1,0 +1,32 @@
+# personal vscode config
+.vscode
+
+# dependent modules
+node_modules
+
+# jsconfig
+jsconfig.json
+
+.history
+
+# 单元测试
+unitTest
+
+# 测试文件
+calc.js
+
+# Mocha + Istanbul 的测试报告
+.nyc_output
+
+# 上传到后台的文件
+upload
+
+# package-lock.json
+package-lock.json
+
+# importFromTotal.js
+# importFromTotal.js
+
+# Total Capture
+TotalCapture
+Capture_403_629

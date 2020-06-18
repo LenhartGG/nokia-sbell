@@ -1,0 +1,73 @@
+//harbor registry
+def registry = "135.252.218.139:30080"
+//define project
+def project = "iontool"
+//def harbor-auth
+def harbor_auth = "e02a396b-4d9c-4147-bb0e-2de8fa43daf3"
+//def image info
+def app_name = "headlinenginx"
+def image_name = "${registry}/${project}/${app_name}:${BUILD_NUMBER}"
+//def kube-auth
+def kube_auth = "b85903d5-98cf-4b4e-ba07-96d05a5bdbe7"
+
+podTemplate(label: 'jenkins-slave', cloud: 'kubernetes', containers: [
+	containerTemplate(
+		name: 'jnlp',
+		image: "${registry}/devops/jenkins-slave-npm:3"
+	),
+  ],
+  volumes: [
+	hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock'),
+	hostPathVolume(mountPath: '/usr/bin/docker', hostPath: '/usr/bin/docker')
+  ],
+)
+{
+  node("jenkins-slave"){
+	stage("pull code"){
+        git branch: 'NewUI_for_v1.1', credentialsId: 'ae4886ba-0f1c-41e0-90bc-2862741a4c61', url: 'http://github.cn.alcatel-lucent.com/CIONTools/Engineer-Headline-Desktop.git'
+        sh label: '', script: 'ls -al'
+        sh 'pwd'
+        sh 'mv headline_frontend headline'
+        sh 'ls headline'
+	}
+	stage("run test"){
+	  sh 'echo skip ...'
+	}
+	stage("compile code"){
+	  sh 'echo skip ...'
+	}
+	stage("build image and push to harbor"){
+	  withCredentials([usernamePassword(credentialsId: 'e02a396b-4d9c-4147-bb0e-2de8fa43daf3', 
+	  passwordVariable: 'harborpassword', usernameVariable: 'harborusername')]) {
+      // some block
+      sh """
+              cd headline
+              npm --proxy http://135.245.192.7:8000 install
+              npm run build
+              mv dist headline
+			  echo '
+			    FROM nginx	
+			    ENV http_proxy=http://135.245.192.7:8000
+			    ENV https_proxy=http://135.245.192.7:8000
+			    COPY headline/ /usr/share/nginx/html/headline/
+			    COPY auto-reload-nginx.sh /home/auto-reload-nginx.sh
+                RUN chmod +x /home/auto-reload-nginx.sh
+                RUN apt-get update && apt-get install -y inotify-tools
+                ENV http_proxy=""
+                ENV https_proxy=""
+			    ' > Dockerfile
+				docker build -t ${image_name} .
+				docker login -u ${harborusername} -p ${harborpassword} ${registry}
+				docker push ${image_name}
+			"""
+	  }
+	}
+	stage("deploy on k8s"){
+		sh 'echo deploying...'
+		sh """
+		  sed -i 's#\$IMAGE_NAME#${image_name}#' headline/deployment.yaml
+		"""
+		kubernetesDeploy configs: 'headline/deployment.yaml', kubeconfigId: "${kube_auth}"
+	}
+  }
+}

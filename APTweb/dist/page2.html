@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>page2</title>
+
+    <link rel="stylesheet" href="http://135.252.218.139:8066/aptlogs/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://135.252.218.139:8066/aptlogs/static/css/fontawesome.css">
+    <link rel="stylesheet" href="http://135.252.218.139:8066/aptlogs/static/css/bootstrap-table.min.css">
+
+    <link rel="stylesheet" href="http://135.252.218.139:8066/aptlogs/static/css/apt.css">
+    <link rel="stylesheet" href="http://135.252.218.139:8066/aptlogs/static/css/reset.css">
+    <link rel="stylesheet" href="http://135.252.218.139:8066/aptlogs/static/css/table.css">
+    <link rel="stylesheet" href="http://135.252.218.139:8066/aptlogs/static/css/page2.css">
+</head>
+
+<body>
+    <div class="mycontainer clearfix">
+            <div class="left-box">
+                <div id="label" style="margin-bottom: 5px;">Testcase Fail Summary</div>
+                <table 
+                    id="table" 
+                    class=" table-bordered" 
+                    style="width: 100%;"
+                    data-detail-view="true"
+                    data-detail-view-by-click="true"
+                    data-detail-formatter="detailFormatter">
+
+                    <!-- <th data-field="result">Result</th>
+                    <th data-field="step">Step</th>
+                    <th data-field="info">Info</th>
+                    <th data-field="time">Elapsed Time(hh:mm:ss)</th> -->
+
+                </table>
+                
+                <!-- <iframe src="http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM3/191010151744/logs/falcon_load_OADM_common_deprovision_Testcase-2/test_summary.html" frameborder="0"></iframe> -->
+                <!-- <iframe src="http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM3/191010151744/logs/falcon_load_OADM_common_deprovision_Testcase-2/test_summary.html" frameborder="0"></iframe> -->
+            
+            </div>
+            <div class="right-box">
+                
+                <!-- <div id="label" style="margin-bottom: 5px;">AI prediction & manual operation</div> -->
+                <div id="result" class="result">
+                    <table 
+                        id="table2" 
+                        class="table-sm table-bordered" 
+                        style="width: 100%;">
+    
+                        <thead>
+                            <tr>
+                                <th data-field="name" data-visible="false">Item Name</th>
+                                <th
+                                    class="prediction"
+                                    data-field="prediction" 
+                                    data-align="center" 
+                                    data-formatter="aiClassificationFormatter">
+                                    AI Classification
+                                </th>
+                                <th 
+                                    data-field="labeling" 
+                                    data-align="center" 
+                                    data-formatter="labelingFormatter" 
+                                    data-events="operateEvents">
+                                    user Proposed Case
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <!-- <iframe src="http://127.0.0.1:5500/Test%20Results_files/saved_resource(2).html" frameborder="0"></iframe> -->
+                    
+                </div>
+            </div>
+            
+            <!-- <iframe id="iframe" style="height: 600px; border-top: 2px solid #cccccc" src="http://aptshanghai.cn.alcatel-lucent.com/~build_load/QFA/SH_TARG_SVT_BUILD_SANITY_4/SH_LOAD_SANITY_FOADM3/191010151744/logs/falcon_load_OADM_common_deprovision_Testcase-2/" frameborder="0"></iframe> -->
+            <iframe id="iframe" frameborder="0"></iframe>
+
+    </div>
+    <!-- <button onclick="getStatusHtml()">click to get status html</button> -->
+
+
+
+</body>
+
+<script src="http://135.252.218.139:8066/aptlogs/static/scripts/jquery-3.3.1.min.js"></script>
+<script src="http://135.252.218.139:8066/aptlogs/static/scripts/popper.min.js"></script>
+<script src="http://135.252.218.139:8066/aptlogs/static/scripts/bootstrap.min.js"></script>
+<script src="http://135.252.218.139:8066/aptlogs/static/scripts/bootstrap-table.min.js"></script>
+
+<!-- <script src="./scripts/config.js"></script> -->
+<script src="http://135.252.218.139:8066/aptlogs/static/scripts/tool.js"></script>
+<script src="http://135.252.218.139:8066/aptlogs/static/scripts/page2.js"></script>
+<script src="http://135.252.218.139:8066/aptlogs/static/envirtecaweb.js"></script>
+
+</html>

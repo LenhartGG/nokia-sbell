@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network chart</title>
+        
+    <!-- 电路图 start -->
+    <link rel="stylesheet" href="./index/optical-lib/css/joint-2.1.0.css">
+    <!-- svg-pan-zoom.min -->
+    <script src="./index/optical-lib/library/svgutilsroot/svg-pan-zoom/svg-pan-zoom.min.js"></script>
+    <!-- dependencies -->
+    <script src="./index/optical-lib/library/jquery/jquery-2.2.4.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./index/optical-lib/library/lodash/lodash.min.js"></script>
+    <script src="./index/optical-lib/library/backbone/backbone-min.js"></script>
+    <script src="./index/optical-lib/library/dagreroot/dagre/dagre.js"></script>
+    <script src="./index/optical-lib/library/dagreroot/graphlib/graphlib.js"></script>
+    <script src="./index/optical-lib/library/jointroot/joint.js"></script>
+    
+
+    <!-- code -->
+    <script src="./index/optical-lib/js/I18nTranslations.js"></script>
+    <script src="./index/optical-lib/js/CommonBaseObj.js"></script>
+    <script src="./index/optical-lib/js/joint.shapes.devs.otnAmd.js"></script>
+    <script src="./index/optical-lib/js/OtnMsgUtils.js"></script>
+    <script src="./index/optical-lib/js/OtnGLDisplayComponent.js"></script>
+    <!-- <script src="./index/optical-lib/js/E2ERoutingDisplay.js"></script> -->
+    <!-- 单独展示电路图 -->
+    <script src="./chart/E2ERoutingDisplay.js"></script>    
+    <script src="./index/optical-lib/js/DataRetriever.js"></script>
+    <!-- 画图的数据 -->
+    <script src="./index/optical-lib/js/data.js"></script>
+    <!-- 电路图 end -->
+</head>
+<body>
+    
+    <div id="paper" class="height"></div>
+
+
+    <script src="./index/js/tool.js"></script>
+    <!-- jQuery -->
+    <script src="./library/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./library/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Datatables -->
+    <script src="./library/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="./library/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="./library/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="./library/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="./library/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="./library/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="./library/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <!-- FastClick -->
+    <script src="./library/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="./library/nprogress/nprogress.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="./library/moment/min/moment.min.js"></script>
+    <script src="./library/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-datetimepicker -->    
+    <script src="./library/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    
+    
+    <!-- loading -->
+    <link href="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/busy-load/dist/app.min.js"></script>
+
+    <script src="./chart/chart.js"></script>
+</body>
+</html>

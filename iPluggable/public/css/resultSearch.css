@@ -1,0 +1,118 @@
+.section_table{
+    position: relative;
+    /* padding: 20px!important; */
+}
+
+.thGradient {
+    color: white;
+    background-color: #96c4fd;
+    background-image: -webkit-linear-gradient(left,  #0e7dfd, #2AF598);
+    background-image: -moz-linear-gradient(left,  #0e7dfd, #2AF598);
+    background-image: -ms-linear-gradient(left,  #0e7dfd, #2AF598);
+    background-image: -o-linear-gradient(left,  #0e7dfd, #2AF598);
+    background-image: linear-gradient(left, #0e7dfd, #2AF598);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0e7dfd, endColorstr=#2AF598);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0e7dfd, endColorstr=#2AF598)";
+}
+#detailModalTable th{
+    width: 25%;
+}
+#detailModalTable td{
+    width: 15%;
+}
+#navbar-collapse-2 a{
+    color: white
+}
+.search-btn ,.toggle-btn{
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+    background-color: #FDC600;
+    color: #333;
+    font-size: 16px;
+    border: 1px solid #EAE9E9;
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    transition: all 0.3s ease 0s;
+    padding: 0px;
+}
+.search-form {
+    background-color: #fff;
+    border-radius: 5px;
+    /* padding: 20px 0; */
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 9;
+    margin-bottom: 0.5rem;
+}
+.search-form .search-toggle {
+    float: left;
+    width: 90%;
+    /* position: absolute; */
+    /* background: white; */
+    /* width: -webkit-fill-available; */
+    /* margin-top: 20px; */
+    /* overflow: hidden; */
+    /* color: #777; */
+    /* border-left: 1px solid #EAEAEA; */
+    /* border-right: 1px solid #EAEAEA; */
+    /* border-bottom: 1px solid #EAEAEA; */
+    padding: 15px;
+}
+.search-form .form-inline .form-group {
+    display: none;
+    /* width: 235px; */
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+.slider-selection { 
+    background: #FDC600;
+}
+.search-form .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color: #FDC600;
+    outline: 0px none;
+}
+.search-form .dropdown-menu > li > a {
+    display: block;
+    padding: 9px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857;
+    color: #333;
+    white-space: nowrap;
+}
+.search-form .dropdown-menu {
+    padding: 5px 0px 0px 0px;
+}
+
+/* 多选框的内边距 */
+.select2-container--default .select2-selection--multiple .select2-selection__rendered{
+    padding: 0 15px 0 5px!important;
+}
+/* 覆盖多选框的删除X按钮高度 解决塌陷 */
+.select2-container--default .select2-selection--multiple .select2-selection__clear{
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: -10px!important;
+    height: 22px!important;
+}
+/* 覆盖bootstrap的 row 布局 */
+.row{
+    margin-bottom: 10px;
+}
+/* 覆盖select2的多选框 */
+#selectTargetDistance + .select2 .selection .select2-selection .select2-selection__rendered .select2-search input{
+    width: 104px!important;
+}
+
+/*防止分页器高亮*/
+#section_table .pagination>.active>a{
+    z-index: 0!important; 
+}
